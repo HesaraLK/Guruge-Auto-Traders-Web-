@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers - Guruge Auto Traders</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="side_nav">
+            <img src="GAT_LOGO.png" alt="Logo" class="car_logo">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="vehicles.html">Vehicles</a>
+            <a href="customers.html" class="active">Customers</a>
+            <a href="sales.html">Sales</a>
+            <a href="index.html" class="logout" onclick="localStorage.clear()">Logout</a>
+        </div>
+
+        <div class="right_side">
+            <h1>Customer Management</h1>
+
+            <div class="form">
+                <input type="text" placeholder="Customer ID" id="CustomerID" disabled>
+                <input type="text" placeholder="Customer Name" id="CustomerName">
+                <input type="text" placeholder="Address" id="address">
+                <input type="tel" placeholder="Phone Number" id="phoneNumber">
+            </div>
+
+            <div class="btns">
+                <button>Add</button>
+                <button>Update</button>
+                <button class="red">Delete</button>
+                <button class="gray" onclick="reset_customer()">Reset</button>
+            </div>
+
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Hesara Kithmina</td>
+                    <td>KalEliya</td>
+                    <td>0773207500</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Indika Priyadarshana</td>
+                    <td>KalEliya</td>
+                    <td>0773788237</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    
+    <script src="js/script.js"></script>
+    <script src="js/row.js"></script>
+</body>
+</html>

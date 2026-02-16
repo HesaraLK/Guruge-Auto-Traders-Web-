@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicles - Guruge Auto Traders</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="side_nav">
+            <img src="GAT_LOGO.png" alt="Logo" class="car_logo">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="vehicles.html" class="active">Vehicles</a>
+            <a href="customers.html">Customers</a>
+            <a href="sales.html">Sales</a>
+            <a href="index.html" class="logout" onclick="localStorage.clear()">Logout</a>
+        </div>
+
+        <div class="right_side">
+            <h1>Vehicle Management</h1>
+
+            <div class="form">
+                <input type="text" placeholder="Vehicle ID" id="vehicleID" disabled>
+                <input type="text" placeholder="Type" id="type">
+                <input type="text" placeholder="Brand" id="brand">
+                <input type="text" placeholder="Model" id="model">
+                <input type="text" placeholder="Year" id="year">
+                <input type="text" placeholder="Price" id="price">
+                <input type="text" placeholder="Status" id="status">
+            </div>
+
+            <div class="btns">
+                <button>Add</button>
+                <button>Update</button>
+                <button class="red">Delete</button>
+                <button class="gray" onclick="reset_vehicle()">Reset</button>
+            </div>
+
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Type</th>
+                    <th>Brand</th>
+                    <th>Model</th>
+                    <th>Year</th>
+                    <th>Price</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Car</td>
+                    <td>Toyota</td>
+                    <td>Corolla</td>
+                    <td>2007</td>
+                    <td>7,200,000</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Bike</td>
+                    <td>Yamaha</td>
+                    <td>FZ</td>
+                    <td>2017</td>
+                    <td>270,000</td>
+                    <td>Sold</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Cab</td>
+                    <td>Toyota</td>
+                    <td>Hilux Revo</td>
+                    <td>2017</td>
+                    <td>16,700,000</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Van</td>
+                    <td>Toyota</td>
+                    <td>Hiace</td>
+                    <td>2024</td>
+                    <td>24,900,000</td>
+                    <td>Available</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+    <script src="js/row.js"></script>
+</body>
+</html>
