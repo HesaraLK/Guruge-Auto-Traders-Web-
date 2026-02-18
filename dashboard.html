@@ -10,7 +10,7 @@
     
     <div class="container">
         <div class="side_nav">
-            <img src="GAT_LOGO.png" alt="Logo" class="car_logo">
+            <img src="GAT_LOGO.png" alt="Logo" class="car_logo" onclick="backToHome()">
             <a href="dashboard.html" class="active">Dashboard</a>
             <a href="vehicles.html">Vehicles</a>
             <a href="customers.html">Customers</a>
@@ -50,6 +50,8 @@
     const username = localStorage.getItem("username");
     document.getElementById("welcome").innerText = "Welcome " + username + "!"
 </script>
+<script src="js/script.js"></script>
 
 </body>
+
 </html>
